@@ -18,6 +18,11 @@ interface TestimonialsData {
     message: string
 }
 
+interface CardsData {
+    index: number,
+    message: string
+}
+
 export const menu: MenuData[] = [
     {
         index: 0,
@@ -145,4 +150,19 @@ export const testimonials:TestimonialsData[] = [
         clinic: "Dientes",
         message: "Ellos nos entregan los trabajos siempre a tiempo y con calidad"
     }
+]
+
+export const cardsData: CardsData[] = [
+    {
+        index: 0,
+        message: "Utilizamos materiales de calidad, al tanto de las últimas especificaciones y requerimientos de la industria"
+    },
+    {
+        index: 1,
+        message: "Procuramos el mejor acabado posible en cada pieza, utilizando técnicas actuales y propias, cuidadosamente refinadas por años"
+    },
+    {
+        index: 2,
+        message: "Nuestros tiempos de entrega son rápidos y se ajustan a las necesidades de cada caso. "
+    },
 ]
