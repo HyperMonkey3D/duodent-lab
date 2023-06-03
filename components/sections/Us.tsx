@@ -13,10 +13,10 @@ const Us = () => {
                         />                 
                     </div>
                     <div className="w-[490px] h-[505px] bg-duo-blue flex justify-center items-center px-10 border-0 rounded-r-lg">
-                        <h3 className="text-4xl text-white">
+                        <h2 className="text-4xl text-white">
                             Somos un Laboratorio Dental con más de 5 años de experiencia. Nos enfocamos en lo <span className="text-duo-light-blue-300">técnico</span>, para que los doctores se enfoquen 
                             en lo <span className="text-duo-light-blue-300">humano</span>.
-                        </h3>
+                        </h2>
                     </div>
             </div>
         </section>
