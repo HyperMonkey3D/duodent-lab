@@ -2,7 +2,7 @@ import { cardsData } from "@/app/utils/data"
 
 const HowWeWork = () => {
     return(
-        <section className="bg-duo-light-gray border-y border-duo-stroke p-12">
+        <section className="bg-duo-light-gray border-y border-duo-stroke px-12 py-16">
             <div className="container mx-auto">
                 <div className="flex flex-wrap w-full justify-evenly">
                 {

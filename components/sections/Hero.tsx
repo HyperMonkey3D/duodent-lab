@@ -12,7 +12,7 @@ const Hero = () => {
                             <p className="text-white p-6 text-2xl ">Agende una visita de demostración, consulte especificaciones técnicas o aclare dudas</p>
                     </div>
                     <div className="w-[394px] bg-white h-[108px] flex items-center justify-center border border-duo-orange rounded-b-lg">
-                            <Link href={"#hablemos"} className={"text-duo-orange text-5xl "}>Contáctenos</Link>
+                            <Link href={"#hablemos"} className={"text-duo-orange text-5xl font-bold"}>Contáctenos</Link>
                         </div>
                 </div>
             </div>

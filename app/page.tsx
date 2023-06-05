@@ -6,6 +6,7 @@ import HowWeHelp from '@/components/sections/HowWeHelp'
 import Trust from '@/components/sections/Trust'
 import HowWeWork from '@/components/sections/HowWeWork'
 
+
 export default function Home() {
   return (
     <main>
@@ -14,6 +15,7 @@ export default function Home() {
       <HowWeHelp />
       <Trust />
       <HowWeWork />
+      
     </main>
   )
 }
