@@ -44,7 +44,7 @@ const Slider = () => {
                     .map((item) => {
                         const {index, name, clinic, message} = item
                         return(
-                            <div className={counter === index ? displayedCard : "hidden"}>
+                            <div className={counter === index ? displayedCard : "hidden"} key={index}>
                                 <h3 className="text-3xl font-bold mb-2">{name}</h3>
                                 <p className="text-xl mb-5">{clinic}</p>
                                 <q className="text-4xl">{message}</q>
