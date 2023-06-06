@@ -1,6 +1,13 @@
+import HeroProducts from "@/components/sections/HeroProducts"
+import PriceList from "@/components/sections/PriceList"
+
+
 const Products = () => {
     return(
-        <h1>PRODUCTOS</h1>
+        <main>
+            <HeroProducts />
+            <PriceList />
+        </main>
     )
 }
 

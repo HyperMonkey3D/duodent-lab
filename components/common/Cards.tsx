@@ -16,9 +16,9 @@ const Cards = ( { side } : CardProps ) => {
                         works
                         .filter(item => item.side === side)
                         .map((item) => {
-                            const {index, work} = item
+                            const {index, product} = item
                             return(
-                                <li key={index}><p className="text-2xl">{work}</p></li>
+                                <li key={index}><p className="text-2xl">{product}</p></li>
                             )
                         })
                     )
@@ -29,9 +29,9 @@ const Cards = ( { side } : CardProps ) => {
                         works
                         .filter(item => item.side === side)
                         .map((item) => {
-                            const {index, work} = item
+                            const {index, product} = item
                             return(
-                                <li key={index}><p className="text-2xl">{work}</p></li>
+                                <li key={index}><p className="text-2xl">{product}</p></li>
                             )
                         })
                     )

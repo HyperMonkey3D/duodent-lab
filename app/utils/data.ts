@@ -7,8 +7,8 @@ interface MenuData  {
 interface WorksData {
     index: number,
     side: string,
-    work: string,
-    price: number
+    product: string,
+    price: string
 }
 
 interface TestimonialsData {
@@ -60,74 +60,74 @@ export const works: WorksData[] = [
     {
         index: 1,
         side: "left",
-        work: "Corona de Zirconio Monolítico",
-        price: 550.00  
+        product: "Corona de Zirconio Monolítico",
+        price: "550.00" 
     },
     {
         index: 2,
         side: "left",
-        work: "Corona de Zirconio Porcelana Estratificada",
-        price: 650.00
+        product: "Corona de Zirconio Porcelana Estratificada",
+        price: "650.00"
     },
     {
         index: 3,
         side: "right",
-        work: "Corona Metal Porcelana",
-        price: 275.00
+        product: "Corona Metal Porcelana",
+        price: "275.00"
     },
     {
         index: 4,
         side: "right",
-        work: "Corona Metal Porcelana Sobre Implante",
-        price: 325.00
+        product: "Corona Metal Porcelana Sobre Implante",
+        price: "325.00"
     },
     {
         index: 5,
         side: "left",
-        work: "Prótesis Totales",
-        price: 425.00
+        product: "Prótesis Totales",
+        price: "425.00"
     },
     {
         index: 6,
         side: "none",
-        work: "Parcial Removible Con Gancho de Acero",
-        price: 250.00
+        product: "Parcial Removible Con Gancho de Acero",
+        price: "250.00"
     },
     {
         index: 7,
         side: "right",
-        work: "Flexible Unilateral",
-        price: 375.00
+        product: "Flexible Unilateral",
+        price: "375.00"
     },
     {
         index: 8,
         side: "none",
-        work: "Provisionales de Acrílico",
-        price: 50.00
+        product: "Provisionales de Acrílico",
+        price: "50.00"
     },
     {
         index: 9,
         side: "none",
-        work: "Formadentina Colada (NPG 125) de Cromo Níquel",
-        price: 110.00
+        product: "Formadentina Colada (NPG 125) de Cromo Níquel",
+        price: "110.00"
     },
     {
         index: 10,
         side: "right",
-        work: "Incrustaciones de Recina",
-        price: 225.00
+        product: "Incrustaciones de Recina",
+        price: "225.00"
     },
     {
         index: 11,
         side: "none",
-        work: "Encerado de Diagnóstico",
-        price: 35.00
+        product: "Encerado de Diagnóstico",
+        price: "35.00"
     },
     {
         index: 12,
         side: "left",
-        work: "Flexible Bilateral",
-        price: 650.00
+        product: "Flexible Bilateral",
+        price: "650.00"
     },
 ]
 
