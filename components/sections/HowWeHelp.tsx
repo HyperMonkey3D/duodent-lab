@@ -5,7 +5,7 @@ import lines from "../../public/stars.svg"
 
 const HowWeHelp = () => {
     return(
-        <section className="bg-duo-blue py-16 relative">
+        <section id="como-le-ayudamos" className="bg-duo-blue py-16 relative">
             <Image 
                 src={lines}
                 alt="lines"

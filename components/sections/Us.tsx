@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Us = () => {
     return(
-        <section className="py-16 bg-duo-light-gray border-y border-duo-stroke">
+        <section id="nosotros" className="py-16 bg-duo-light-gray border-y border-duo-stroke">
             <div className="flex flex-wrap container mx-auto h-[505px] justify-center ">
                     <div >
                         <Image 

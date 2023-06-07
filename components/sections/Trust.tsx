@@ -2,7 +2,7 @@ import Slider from "../common/Slider"
 
 const Trust = () => {
     return(
-        <section className="bg-white py-11">
+        <section id="confianza" className="bg-white py-11">
             <div className="w-[1191px] mx-auto p-11">
                 <div className="mb-12">
                     <h2 className="w-[805px] text-4xl">

@@ -10,7 +10,7 @@ import whatsapp from "../../public/whatsapp.svg"
 
 const Footer = () => {
     return(
-        <footer>
+        <footer id="hablemos">
             <div className="container mx-auto flex justify-evenly py-[80px]">
                 <div className="flex flex-col justify-between">
                     <div className="bg-duo-blue w-[588px] h-[713px] border-0 rounded-lg ">
