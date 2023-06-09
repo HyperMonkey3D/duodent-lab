@@ -28,7 +28,7 @@ const Slider = () => {
     }
 
     return(
-        <div className="bg-duo-orange flex p-10 border rounded-lg">
+        <div className="bg-duo-orange flex p-10 border rounded-lg w-[400px] sm:w-[500px]  md:w-[700px] lg:w-full ">
             <button
                 onClick={()=>counterDown()}
             >

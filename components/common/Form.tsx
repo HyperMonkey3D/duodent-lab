@@ -29,7 +29,7 @@ const Form = () => {
             <div className="py-6">
                 <h3 className="text-3xl text-duo-orange">O escríbanos</h3>
             </div>
-            <div className="w-full">
+            <div className="w-full"> 
                 <label htmlFor="" className="font-bold">Nombre</label>
                 <input 
                     type="text" 
