@@ -13,7 +13,7 @@ const Footer = () => {
         <footer id="hablemos">
             <div className="container mx-auto flex flex-wrap lg:flex justify-evenly py-[80px]">
                 <div className="flex flex-col justify-between">
-                    <div className="bg-duo-blue w-[588px] h-[713px] border-0 rounded-lg ">
+                    <div className="bg-duo-blue w-[260px] sm:w-[350] md:w-[450px] lg:w-[588px] h-[713px] border-0 rounded-lg ">
                         <div >
                             <Image 
                                 src={smile}
@@ -33,6 +33,7 @@ const Footer = () => {
                                     src={arrowRight}
                                     alt="arrow right"
                                     height={18}
+                                    className="rotate-90 xl:rotate-0"
                                 />                            
                             </div>
                         </div>
