@@ -9,7 +9,7 @@ interface CardProps  {
 
 const Cards = ( { side } : CardProps ) => {
     return(
-        <div className="w-full lg:w-[400px] xl:w-[517px] h-fit lg:h-[326px] bg-white px-10 py-14 border border-white sm:rounded-lg flex flex-col justify-between z-10 mb-6 lg:mb-0">
+        <div className="w-full lg:w-[400px] xl:w-[517px] h-fit lg:h-[326px] bg-white px-10 py-14 border border-white sm:rounded-lg flex flex-col justify-between z-10 mb-[2px] lg:mb-0">
             <ul>
                 {
                     side === "left" && (

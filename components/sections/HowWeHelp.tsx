@@ -37,7 +37,7 @@ const HowWeHelp = () => {
 
     return(
         <section id="como-le-ayudamos" className="bg-duo-blue py-16 relative overflow-clip">
-            {large &&(<div className=" absolute right-0 bottom-0  w-full h-full -z-1">
+            {large &&(<div className=" absolute right-0 bottom-0  w-full h-full -z-1 overflow-clip">
                 <Image 
                     src={lines}
                     alt="lines"
@@ -54,7 +54,7 @@ const HowWeHelp = () => {
                             Ayudamos a los dentistas fabricando prótesis a la <span className="text-duo-light-blue-300">medida</span> y a <span className="text-duo-light-blue-300">tiempo</span>  
                         </h2>
                     </div>
-                    <div className="sm:flex flex-wrap lg:flex-wrap justify-between  ">
+                    <div className="sm:flex flex-wrap lg:flex-wrap justify-between  overflow-clip">
                         <Cards side="left"/>
                         <Cards side="right"/>
                     </div>
