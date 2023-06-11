@@ -3,9 +3,9 @@
 import { menu } from "@/app/utils/data"
 import Link from "next/link"
 import Image from "next/image"
-import logo from "../../public/Vector.svg"
+import logo from "../../public/Vector1.svg"
 import { useEffect, useState } from "react"
-import menuIcon from "../../public/list.svg"
+import menuIcon from "../../public/list1.svg"
 
 const getCurrentSize = () => {
     if(typeof window !== "undefined") {

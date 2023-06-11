@@ -1,6 +1,6 @@
 import { works } from "@/app/utils/data"
 import Link from "next/link"
-import arrowRight from "../../public/arrow-right.svg"
+import arrowRight from "../../public/arrow-right1.svg"
 import Image from "next/image"
 
 interface CardProps  {

@@ -1,7 +1,7 @@
 "use client"
 import Cards from "../common/Cards"
 import Image from "next/image"
-import lines from "../../public/stars.svg"
+import lines1 from "../../public/stars1.svg"
 import { useEffect, useState } from "react"
 
 const getCurrentSize = () => {
@@ -39,7 +39,7 @@ const HowWeHelp = () => {
         <section id="como-le-ayudamos" className="bg-duo-blue py-16 relative overflow-clip">
             {large &&(<div className=" absolute right-0 bottom-0  w-full h-full -z-1 overflow-clip">
                 <Image 
-                    src={lines}
+                    src={lines1}
                     alt="lines"
                     className="w-full "
                 />
