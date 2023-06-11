@@ -1,9 +1,17 @@
 "use client"
 import Cards from "../common/Cards"
 import Image from "next/image"
-import lines1 from "../../public/stars1.svg"
+import lines from "../../public/stars.svg"
 import { useEffect, useState } from "react"
 
+const getCurrentSize = () => {
+    if(typeof window !== "undefined") {
+        return{
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
+    }
+}
 const getCurrentSize = () => {
     if(typeof window !== "undefined") {
         return{
