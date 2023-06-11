@@ -12,7 +12,7 @@ const Us = () => {
                             className="border-0 sm:rounded-t-lg xl:rounded-l-lg xl:rounded-r-none  "
                         />                 
                     </div>
-                    <div className="w-full lg:w-[728px] xl:w-[490px] h-full lg:h-[505px] bg-duo-blue flex justify-center items-center p-10 xl:border-0 xl:rounded-r-lg  md:py-16">
+                    <div className="w-full lg:w-[728px] xl:w-[490px] h-full lg:h-[300px] xl:h-[505px] bg-duo-blue flex justify-center items-center p-10 xl:border-0 sm:rounded-b-lg xl:rounded-l-none xl:rounded-r-lg  md:py-16">
                         <h2 className="text-3xl md:text-4xl text-white">
                             Somos un Laboratorio Dental con más de 5 años de experiencia. Nos enfocamos en lo <span className="text-duo-light-blue-300">técnico</span>, para que los doctores se enfoquen 
                             en lo <span className="text-duo-light-blue-300">humano</span>.

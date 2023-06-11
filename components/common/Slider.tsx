@@ -7,7 +7,7 @@ import rightArrow from "../../public/arrow-right-white.svg"
 
 const Slider = () => {
     
-    const displayedCard = "bg-duo-orange text-white w-full p-6 text-center"
+    const displayedCard = "bg-duo-orange text-white w-full p-6 text-center border-0 rounded-lg"
 
     const [counter, setCounter] = useState(0)
     
@@ -28,17 +28,9 @@ const Slider = () => {
     }
 
     return(
-        <div className="bg-duo-orange  flex p-10 border rounded-lg w-[250px] sm:w-[400px]  md:w-[500px] lg:w-full ">
-            <button
-                onClick={()=>counterDown()}
-            >
-                <Image 
-                    src={leftArrow}
-                    alt={"Left arrow"}
-                    height={30}
-                />   
-            </button>
-            <div className="w-full">
+        <div className="bg-duo-orange  flex  flex-col-reverse lg:flex-row p-10 border rounded-lg  w-full  h-[430px] sm:h-[350px] lg:h-[250px] relative">
+
+            <div className="w-full lg:w-[750px] lg:h-[230px] absolute top-0 left-0 lg:left-20">
                 {
                     testimonials
                     .map((item) => {
@@ -47,14 +39,27 @@ const Slider = () => {
                             <div className={counter === index ? displayedCard : "hidden"} key={index}>
                                 <h3 className="text-3xl font-bold mb-2">{name}</h3>
                                 <p className="text-xl mb-5">{clinic}</p>
-                                <q className="text-4xl">{message}</q>
+                                <q className="text-3xl md:text-4xl">{message}</q>
                             </div>
                         )
                     })
                 }
             </div>
+            <div className="w-full flex justify-evenly lg:justify-between">
+                <button
+                onClick={()=>counterDown()}
+                
+            >
+                <Image 
+                    src={leftArrow}
+                    alt={"Left arrow"}
+                    height={30}
+                />   
+            </button>
+            
             <button 
                 onClick={()=>counterUp()}
+                 
             >
                 <Image
                     src={rightArrow}
@@ -62,6 +67,8 @@ const Slider = () => {
                     height={30}
                 />
             </button>
+            </div>
+            
         </div>
     )
 }

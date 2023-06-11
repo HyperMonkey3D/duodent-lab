@@ -10,8 +10,8 @@ const HowWeWork = () => {
                     .map((item) => {
                         const {index, message} = item
                         return(
-                            <div key={index} className="w-[401px] h-[352px] bg-white flex items-center px-10 border border-duo-stroke rounded-lg">
-                                <p className="text-3xl">{message}</p>
+                            <div key={index} className="w-[250px] sm:w-[401px] h-[380px] lg:h-[352px] bg-white flex items-center px-5 sm:px-10 border border-duo-stroke rounded-lg mb-3 xl:mb-0">
+                                <p className="text-2xl sm:text-3xl ">{message}</p>
                             </div>
                         )
                     })
