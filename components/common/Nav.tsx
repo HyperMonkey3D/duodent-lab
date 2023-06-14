@@ -6,6 +6,7 @@ import Image from "next/image"
 import logo from "../../public/Vector1.svg"
 import { useEffect, useState } from "react"
 import menuIcon from "../../public/list1.svg"
+import closeMenu from "../../public/close-menu.svg"
 import Menu from "../common/Menu"
 
 const getCurrentSize = () => {
@@ -43,6 +44,7 @@ const Nav = () => {
         } 
     }
 
+    //check screen size to determine menu type
     useEffect(() => {
         const updateSize = () => {
             setScreenSize(getCurrentSize())
@@ -58,29 +60,36 @@ const Nav = () => {
         })
     }, [screnSize])
 
+    //close mobile menu when menu item is clicked
     useEffect(() => {
         close()
         setIsMenuOptionClicked(false)
     }, [isMenuOptionClicked])
 
     return(
-        <div className="pt-4 pb-4 border-b border-slate-200">
-            <nav className="container m-auto flex justify-between ">
+        <div className="px-5 py-4 border-b border-slate-200">
+            <nav className="container m-auto flex justify-between bg-white xl:px-7">
                 <div className="flex items-center">
                     <Image 
                         src={logo}
                         alt={"logo"}
                     />   
-                    <h3 className="ml-5">DuoDent</h3>
+                    <h3 className="ml-5 text-3xl sm:text-4xl font-bold">DuoDent</h3>
                 </div>
                 {
                    !large && (
-                    <div className="relative bg-slate-200">
+                    <div className="relative bg-black  border border-black rounded-sm flex items-center px-3">
                         <button onClick={menuButton}>
-                            <Image
+                            { isClicked === false ? <Image
                                 src={menuIcon}
                                 alt="menu"
-                            />
+                                width={25}
+                            /> : <Image 
+                                    src={closeMenu}
+                                    alt="icon"
+                                    width={25}
+                                />
+                            }
                         </button>
                         {
                             isClicked && (

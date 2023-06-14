@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -15,9 +19,18 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+q {
   padding: 0;
   margin: 0;
+  font-family: "Atami", Arial, Helvetica, sans-serif ;
+}
+
+li,
+label,
+button,
+a {
+  font-family: "Atami", Arial, Helvetica, sans-serif ;
 }
 
 h2 {
@@ -28,4 +41,16 @@ textarea {
   resize: none;
 }
 
+@font-face {
+  font-family: "Atami";
+  src: url("../fonts/Atami-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Atami";
+  src: url("../fonts/Atami-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
