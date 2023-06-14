@@ -66,7 +66,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[188px] border-t border-duo-stroke"></div>
+            <div className="h-[50px] border-t border-duo-stroke bg-duo-light-gray flex justify-center items-center">
+                <small className="text-duo-dark-gray">Made With Love In Guatemala</small>
+            </div>
         </footer>
     )
 }

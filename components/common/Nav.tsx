@@ -6,6 +6,7 @@ import Image from "next/image"
 import logo from "../../public/Vector1.svg"
 import { useEffect, useState } from "react"
 import menuIcon from "../../public/list1.svg"
+import Menu from "../common/Menu"
 
 const getCurrentSize = () => {
     if(typeof window !== "undefined") {
@@ -18,19 +19,31 @@ const getCurrentSize = () => {
 
 const Nav = () => {
     
-   
     const [screnSize, setScreenSize] = useState(getCurrentSize())
     const [large, setLarge] = useState(true)
-    
-   
-
+    const [isClicked, setIsClicked] = useState(false)
+    const [isMenuOptionClicked, setIsMenuOptionClicked] = useState(false)
     const actionButtonClass = "ml-5 bg-duo-orange px-6 py-2 text-white rounded-lg"
 
-    
+    const menuButton = () => {
+        if(!isClicked){
+            setIsClicked(true)
+            document.body.style.overflow = "hidden"
+        } else {
+            setIsClicked(false)
+            document.body.style.overflow = "auto"
+        }
+    }
+
+    //handle onclick event on individual menu item
+    const close = () => {
+        if(isClicked){
+            setIsClicked(false)
+            document.body.style.overflow = "auto"
+        } 
+    }
 
     useEffect(() => {
-        
-
         const updateSize = () => {
             setScreenSize(getCurrentSize())
         }
@@ -40,17 +53,16 @@ const Nav = () => {
         } else {
             setLarge(true)
         }
-        
-        console.log(screnSize)
         return(()=> {
             window.removeEventListener("resize", updateSize)
         })
-        
-        
     }, [screnSize])
 
+    useEffect(() => {
+        close()
+        setIsMenuOptionClicked(false)
+    }, [isMenuOptionClicked])
 
-  
     return(
         <div className="pt-4 pb-4 border-b border-slate-200">
             <nav className="container m-auto flex justify-between ">
@@ -60,38 +72,40 @@ const Nav = () => {
                         alt={"logo"}
                     />   
                     <h3 className="ml-5">DuoDent</h3>
-                    
                 </div>
                 {
                    !large && (
-                    <div>
-                        <Image
-                            src={menuIcon}
-                            alt="menu"
-                         
-                        />
-
-        
+                    <div className="relative bg-slate-200">
+                        <button onClick={menuButton}>
+                            <Image
+                                src={menuIcon}
+                                alt="menu"
+                            />
+                        </button>
+                        {
+                            isClicked && (
+                                <Menu optionState={[isMenuOptionClicked, setIsMenuOptionClicked]}/>
+                            )
+                        }
                     </div>
                    )
                 }
                 {
-                
-                large && (<ul className="flex items-center">
-                                {
-                                    menu
-                                    .map((item)=> {
-                                    const {index, title, route} = item
-                                    return(
-                                            <li 
-                                                key={`menu-${index}`} 
-                                                className={title === "Hablemos" ? `${actionButtonClass}` : `ml-5`}
-                                            >
-                                            <Link href={route}>
-                                                {title}
-                                            </Link>
-                                            </li>
-                                        )
+                    large && (<ul className="flex items-center">
+                        {
+                            menu
+                            .map((item)=> {
+                                const {index, title, route} = item
+                                return(
+                                        <li 
+                                            key={`menu-${index}`} 
+                                            className={title === "Hablemos" ? `${actionButtonClass}` : `ml-5`}
+                                        >
+                                        <Link href={route}>
+                                            {title}
+                                        </Link>
+                                        </li>
+                                    )
                         })
                     }    
                 </ul>)}
