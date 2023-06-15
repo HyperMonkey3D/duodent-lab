@@ -2,11 +2,11 @@ import Link from "next/link"
 
 const Hero = () => {
     return(
-        <section className="py-6">
-            <div className="container mx-auto lg:p-10 bg-white">
-                <div className="w-fit bg-white flex flex-wrap lg:flex-nowrap">
-                    <div className="w-full lg:w-[600px] xl:w-[800px] px-7 py-6 lg:py-6 sm:px-0 bg-white">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl">Solucions Dentales de Calidad <br></br> Ejecutadas con Cuidado y Dedicación</h1>
+        <section className="py-6 bg-duo-light-gray">
+            <div className="container mx-auto lg:p-10 ">
+                <div className="w-fit  flex flex-wrap lg:flex-nowrap mx-auto">
+                    <div className="w-full lg:w-[600px] xl:w-[800px] px-7 py-6 lg:py-6 sm:px-0 flex items-center">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl">Soluciones Dentales de Calidad <br></br> Ejecutadas con Cuidado y Dedicación</h1>
                     </div>
                     <div className="w-fit  flex flex-col justify-center lg:items-end items-center bg-duo-orange border border-duo-orange sm:rounded-lg">
                         <div className="w-full lg:w-[350px] xl:w-[394px] h-fit lg:h-[250px]  sm:h-[175px] bg-duo-orange flex items-center border border-duo-orange rounded-t-lg">

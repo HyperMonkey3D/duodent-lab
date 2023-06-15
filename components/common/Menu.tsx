@@ -25,7 +25,8 @@ const Menu: React.FC<MenuAction> = ({optionState}) => {
                             const {index, title, route} = item
                             return(
                                 <li key={index} 
-                                    className={title === "Hablemos" ? `${actionButtonClass}` : "bg-white py-2 px-10 border-b border-duo-light-gray"} onClick={clicked}>
+                                    className={title === "Hablemos" ? `${actionButtonClass}` : "bg-white py-2 px-10 border-b border-duo-light-gray"} 
+                                    onClick={clicked}>
                                     <Link href={route}>
                                         {title}
                                     </Link>

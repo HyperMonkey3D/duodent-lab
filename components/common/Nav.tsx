@@ -44,6 +44,22 @@ const Nav = () => {
         } 
     }
 
+    //handle smooth scroll
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        
+        const href = e.currentTarget.href
+        if(href.includes("#")) {
+            e.preventDefault()
+            console.log("href", href)
+            const targetID = href.replace(/.*\#/, "")
+            console.log("href replaced", targetID)
+            const elem = document.getElementById(targetID)
+            console.log("elem", elem)
+            elem?.scrollIntoView({
+            behavior: "smooth"})
+        }
+    }
+
     //check screen size to determine menu type
     useEffect(() => {
         const updateSize = () => {
@@ -74,7 +90,13 @@ const Nav = () => {
                         src={logo}
                         alt={"logo"}
                     />   
-                    <h3 className="ml-5 text-3xl sm:text-4xl font-bold">DuoDent</h3>
+                    <div className="flex items-end bg-white ml-3 ">
+                        <Link href={"/"}>
+                        <h3 
+                            className="text-3xl sm:text-4xl font-bold bg-white"
+                        >DuoDent</h3>
+                        </Link>
+                    </div>
                 </div>
                 {
                    !large && (
@@ -110,7 +132,7 @@ const Nav = () => {
                                             key={`menu-${index}`} 
                                             className={title === "Hablemos" ? `${actionButtonClass}` : `ml-5`}
                                         >
-                                        <Link href={route}>
+                                        <Link href={route} onClick={handleScroll}>
                                             {title}
                                         </Link>
                                         </li>

@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -20,7 +22,8 @@ h2,
 h3,
 h4,
 p,
-q {
+q,
+small {
   padding: 0;
   margin: 0;
   font-family: "Atami", Arial, Helvetica, sans-serif ;
@@ -29,7 +32,9 @@ q {
 li,
 label,
 button,
-a {
+a,
+th,
+td {
   font-family: "Atami", Arial, Helvetica, sans-serif ;
 }
 
