@@ -134,19 +134,19 @@ export const works: WorksData[] = [
 export const testimonials: TestimonialsData[] = [
   {
     index: 0,
-    name: "Dr. Julio Pereira",
+    name: "Dr. Número Uno",
     clinic: "Clínica de Fraijanes",
     message: "DuoDent nos ha ayudado por muchos años con los mejores trabajos",
   },
   {
     index: 1,
-    name: "Dra. Lucía Lara",
+    name: "Dra. Número Dos",
     clinic: "Clínica de la Zona 10",
     message: "DuoDent es un excelente laboratorio. Lo recominendo",
   },
   {
     index: 2,
-    name: "Dr. Felipe Martínez",
+    name: "Dr. Número Tres",
     clinic: "Dientes",
     message: "Ellos nos entregan los trabajos siempre a tiempo y con calidad",
   },
