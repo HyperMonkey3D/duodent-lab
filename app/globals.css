@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
-
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -24,9 +23,9 @@ h4,
 p,
 q,
 small {
-  padding: 0;
-  margin: 0;
-  font-family: "Atami", Arial, Helvetica, sans-serif ;
+    padding: 0;
+    margin: 0;
+    font-family: "Atami", Arial, Helvetica, sans-serif;
 }
 
 li,
@@ -35,27 +34,100 @@ button,
 a,
 th,
 td {
-  font-family: "Atami", Arial, Helvetica, sans-serif ;
+    font-family: "Atami", Arial, Helvetica, sans-serif;
 }
 
 h2 {
-  font-size: 2.25rem;
+    font-size: 2.25rem;
 }
 
 textarea {
-  resize: none;
+    resize: none;
+}
+
+.background-blur {
+    backdrop-filter: blur(90px);
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(90px);
+}
+
+.button-hover {
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.button-hover:hover {
+   background-color: #fdf8f1;
+}
+
+.text-button {
+    color: #FF1515;
+    transition: color 0.5s ease-in-out;
+}
+
+.text-button:hover {
+    color: #b10000;
+}
+
+.card {
+    background-color: #ffffff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.card:hover {
+    background-color: #dcdffb;
+    color: #000d8a;
+
+}
+
+.card div {
+    border: 1px solid black;
+    border-radius: 6px;
+    transition: border-color 0.5s ease-in-out
+}
+
+.card:hover div {
+    border-color: #000d8a;
+}
+
+.card-background {
+    background-color: white;
+
+}
+
+.card-blur {
+    backdrop-filter: blur(10px);
+}
+
+.zed-card {
+    z-index: 1;
+}
+
+.graphics-borders-right {
+    background: linear-gradient(to left, #f3f3f3, rgba(197, 197, 197, 0));
+}
+
+.graphics-borders-left {
+    background: linear-gradient(to right, #f3f3f3, rgba(197, 197, 197, 0));
 }
 
 @font-face {
-  font-family: "Atami";
-  src: url("../fonts/Atami-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Atami";
+    src: url("../fonts/Atami-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Atami";
-  src: url("../fonts/Atami-Bold.otf");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Atami";
+    src: url("../fonts/Atami-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
 }

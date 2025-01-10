@@ -5,8 +5,8 @@ Image;
 
 const HeroProducts = () => {
   return (
-    <section className="py-9">
-      <div className="container mx-auto justify-center bg-white">
+    <section className="py-9" id="inicio-productos">
+      <div className="container mx-auto justify-center bg-white py-24  lg:py-36 ">
         <div className="w-fit md:w-[700px] lg:w-fit flex flex-wrap lg:flex-nowrap bg-white mx-auto ">
           <div className="w-full lg:w-[400px] xl:w-[531px] bg-duo-orange p-9 flex items-center border-0 sm:rounded-b-lg lg:rounded-br-none lg:rounded-l-lg order-2 lg:order-1">
             <h1 className="text-4xl text-white">

@@ -1,7 +1,9 @@
 import { works } from "@/app/utils/data";
 import Link from "next/link";
-import arrowRight from "../../public/arrow-right1.svg";
+// import arrowRight from "../../public/arrow-right1.svg";
+
 import Image from "next/image";
+import ArrowRight from "@/app/utils/ArrowRight";
 
 interface CardProps {
   side: string;
@@ -9,8 +11,8 @@ interface CardProps {
 
 const Cards = ({ side }: CardProps) => {
   return (
-    <div className="w-full lg:w-[400px] xl:w-[517px] h-fit lg:h-[326px] bg-white px-10 py-14 border border-white sm:rounded-lg flex flex-col justify-between z-10 mb-[2px] lg:mb-0">
-      <ul>
+    <div className="z-40 w-full lg:w-[400px] xl:w-[517px] h-fit lg:h-[326px] card px-10 py-14 border border-white sm:rounded-lg flex flex-col justify-between  mb-[2px] lg:mb-0">
+      <ul className="z-20">
         {side === "left" &&
           works
             .filter((item) => item.side === side)
@@ -34,15 +36,10 @@ const Cards = ({ side }: CardProps) => {
               );
             })}
       </ul>
-      <div className="border border-black w-[180px] rounded-md pl-2 mt-8 lg:mt-0">
-        <Link href={"/productos"} className="flex justify-between">
+      <div className=" w-[180px] pl-2 mt-8 lg:mt-0 z-20 ">
+        <Link href={"/productos"} className="flex justify-between ">
           Conozca Más
-          <Image
-            src={arrowRight}
-            alt={"arrow right"}
-            className="ml-4"
-            height={24}
-          />
+            <ArrowRight />
         </Link>
       </div>
     </div>

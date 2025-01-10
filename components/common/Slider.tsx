@@ -39,7 +39,7 @@ const Slider = () => {
             >
               <h3 className="text-3xl font-bold mb-2">{name}</h3>
               <p className="text-xl mb-5">{clinic}</p>
-              <q className="text-3xl md:text-4xl">{message}</q>
+              <q className="text-3xl md:text-4xl font-sans font-light">{message}</q>
             </div>
           );
         })}

@@ -2,7 +2,7 @@ import { works } from "@/app/utils/data";
 
 const PriceList = () => {
   return (
-    <section className="border-y border-duo-stroke py-10">
+    <section className="border-y border-duo-stroke py-10" id="listado-de-productos">
       <div className="container mx-auto ">
         <div className="w-5/6 lg:w-[1000px] mx-auto border border-duo-stroke rounded-lg">
           <table className="mx-auto w-full table-auto h-[700px] ">

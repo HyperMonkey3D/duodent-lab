@@ -1,3 +1,7 @@
+import implant from "../../public/implant.png"
+import circonia from "../../public/Subject.png"
+import {StaticImageData} from "next/image";
+
 interface MenuData {
   index: number;
   title: string;
@@ -20,7 +24,10 @@ interface TestimonialsData {
 
 interface CardsData {
   index: number;
+  title: string;
   message: string;
+  // image: typeof Image
+  //image: StaticImageData;
 }
 
 export const menu: MenuData[] = [
@@ -55,6 +62,24 @@ export const menu: MenuData[] = [
     route: "#hablemos",
   },
 ];
+
+export const menuProducts: MenuData[] = [
+  {
+    index: 0,
+    title: "Inicio",
+    route: "/"
+  },
+  {
+    index: 1,
+    title: "Listado de productos",
+    route: "#listado-de-productos"
+  },
+  {
+    index: 2,
+    title: "Hablemos",
+    route: "#hablemos"
+  }
+]
 
 export const works: WorksData[] = [
   {
@@ -134,20 +159,20 @@ export const works: WorksData[] = [
 export const testimonials: TestimonialsData[] = [
   {
     index: 0,
-    name: "Dr. Número Uno",
-    clinic: "Clínica de Fraijanes",
+    name: "Dr. Jorge Guzmán",
+    clinic: "SuperDente",
     message: "DuoDent nos ha ayudado por muchos años con los mejores trabajos",
   },
   {
     index: 1,
-    name: "Dra. Número Dos",
-    clinic: "Clínica de la Zona 10",
+    name: "Dra. Agustina Lara",
+    clinic: "Dental Hero",
     message: "DuoDent es un excelente laboratorio. Lo recominendo",
   },
   {
     index: 2,
-    name: "Dr. Número Tres",
-    clinic: "Dientes",
+    name: "Dr. Rafael Medina",
+    clinic: "Clínicas del norte",
     message: "Ellos nos entregan los trabajos siempre a tiempo y con calidad",
   },
 ];
@@ -155,17 +180,23 @@ export const testimonials: TestimonialsData[] = [
 export const cardsData: CardsData[] = [
   {
     index: 0,
+    title: "Utilizamos materiales de calidad",
     message:
-      "Utilizamos materiales de calidad, al tanto de las últimas especificaciones y requerimientos de la industria",
+      "Al tanto de las últimas especificaciones y requerimientos de la industria",
+    //image: circonia
   },
   {
     index: 1,
+    title: "Procuramos el mejor acabado posible en cada pieza",
     message:
-      "Procuramos el mejor acabado posible en cada pieza, utilizando técnicas actuales y propias, cuidadosamente refinadas por años",
+      "Utilizando técnicas actuales y propias, cuidadosamente refinadas por años",
+   // image: implant
   },
   {
     index: 2,
+    title: "Nuestros tiempos de entrega son rápidos",
     message:
-      "Nuestros tiempos de entrega son rápidos y se ajustan a las necesidades de cada caso. ",
+      "Ajustándonos a las necesidades de cada caso y trabajo",
+    //image: circonia
   },
 ];
