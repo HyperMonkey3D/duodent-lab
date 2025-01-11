@@ -118,6 +118,19 @@ textarea {
     background: linear-gradient(to right, #f3f3f3, rgba(197, 197, 197, 0));
 }
 
+.hero-load {
+    animation: fade-in 2s ease-in 1s forwards;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @font-face {
     font-family: "Atami";
     src: url("../fonts/Atami-Regular.otf");

@@ -49,13 +49,11 @@ const HowWeHelp = () => {
             )}
             {
                 !large && (
-                    <div className="absolute right-0 top-0  w-full h-[22%]  overflow-clip  zed-card ">
+                    <div className="hidden">
                         <Image src={lines} alt="lines" className="w-full zed-card"/>
                     </div>
                 )
             }
-
-
             <div className="container mx-auto z-10 bg-transparent">
                 <div className="w-full lg:w-[900px] xl:w-[1100px]  mx-auto bg-transparent z-50">
                 <div className="w-full px-10 lg:px-0 lg:w-3/4 bg-transparent z-50">

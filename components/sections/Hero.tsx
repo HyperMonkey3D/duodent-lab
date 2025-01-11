@@ -22,7 +22,7 @@ const Hero = () => {
                 <div className="w-full h-full relative">
                     <div className="container mx-auto py-24  lg:py-36  bg-transparent">
                         <div
-                            className="w-fit  flex justify-center items-center flex-wrap lg:flex-nowrap mx-auto ">
+                            className="w-fit  flex justify-center items-center flex-wrap lg:flex-nowrap mx-auto hero-load opacity-0">
                             <div
                                 className=" w-full lg:w-[600px] xl:w-[800px] px-7 pt-5 pb-20 lg:py-6 sm:px-0 flex flex-col justify-between items-start">
                                 <h1 className="text-5xl lg:text-8xl font-semibold text-black">
